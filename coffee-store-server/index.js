@@ -3,6 +3,7 @@ const cors = require("cors");
 const multer = require("multer");
 const { MongoClient, ServerApiVersion } = require("mongodb");
 require("dotenv").config();
+const { ObjectId } = require("mongodb");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -99,6 +100,53 @@ async function run() {
         console.error("Error fetching coffees:", error);
         res.status(500).send({ error: "Failed to fetch coffees" });
       }
+    });
+
+    app.delete("/delete-coffee/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const result = await coffeeCollection.deleteOne(query);
+      res.send(result);
+    });
+
+    app.get("/coffees/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const coffee = await coffeeCollection.findOne(query);
+      if (coffee && coffee.photo && coffee.photo.data) {
+        const base64 = coffee.photo.data.toString("base64");
+        const contentType = coffee.photo.contentType || "image/jpeg"; // fallback type
+        coffee.photo = `data:${contentType};base64,${base64}`;
+      }
+      res.send(coffee);
+    });
+    app.put("/update-coffee/:id", upload.single("photo"), async (req, res) => {
+      const id = req.params.id;
+      const { name, price, supplier, taste, category, details } = req.body;
+      const file = req.file;
+
+      const updatedCoffee = {
+        name,
+        price,
+        supplier,
+        taste,
+        category,
+        details,
+      };
+
+      if (file) {
+        updatedCoffee.photo = {
+          data: file.buffer,
+          contentType: file.mimetype,
+          originalName: file.originalname,
+        };
+      }
+
+      const query = { _id: new ObjectId(id) };
+      const result = await coffeeCollection.updateOne(query, {
+        $set: updatedCoffee,
+      });
+      res.send(result);
     });
   } finally {
     // Keep client connected so server runs

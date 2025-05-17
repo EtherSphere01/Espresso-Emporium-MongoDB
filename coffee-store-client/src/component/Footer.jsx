@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('public/resources/images/more/13.jpg')`,
+        backgroundImage: `url('/public/resources/images/more/13.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="container mx-auto p-20 flex flex-col md:flex-row gap-10 items-center justify-between">
         <div className="space-y-6">
           <img
-            src="public/resources/images/more/logo1.png"
+            src="/public/resources/images/more/logo1.png"
             alt=""
             className="h-15 w-15"
           />
@@ -108,7 +108,7 @@ const Footer = () => {
 
       <div
         style={{
-          backgroundImage: `url('public/resources/images/more/24.jpg')`,
+          backgroundImage: `url('/public/resources/images/more/24.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

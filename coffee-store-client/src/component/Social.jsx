@@ -10,49 +10,49 @@ const Social = () => {
 
       <div className="md:grid md:grid-cols-4 gap-5 p-2 md:p-0 flex flex-col">
         <img
-          src="public/resources/images/cups/rectangle9.png"
+          src="/public/resources/images/cups/rectangle9.png"
           alt=""
           className=""
         />
 
         <img
-          src="public/resources/images/cups/rectangle10.png"
+          src="/public/resources/images/cups/rectangle10.png"
           alt=""
           className=""
         />
 
         <img
-          src="public/resources/images/cups/rectangle11.png"
+          src="/public/resources/images/cups/rectangle11.png"
           alt=""
           className=""
         />
 
         <img
-          src="public/resources/images/cups/rectangle12.png"
+          src="/public/resources/images/cups/rectangle12.png"
           alt=""
           className=""
         />
 
         <img
-          src="public/resources/images/cups/rectangle13.png"
+          src="/public/resources/images/cups/rectangle13.png"
           alt=""
           className=""
         />
 
         <img
-          src="public/resources/images/cups/rectangle14.png"
+          src="/public/resources/images/cups/rectangle14.png"
           alt=""
           className=""
         />
 
         <img
-          src="public/resources/images/cups/rectangle15.png"
+          src="/public/resources/images/cups/rectangle15.png"
           alt=""
           className=""
         />
 
         <img
-          src="public/resources/images/cups/rectangle16.png"
+          src="/public/resources/images/cups/rectangle16.png"
           alt=""
           className=""
         />

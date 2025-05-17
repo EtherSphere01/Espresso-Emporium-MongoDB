@@ -1,15 +1,16 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Outlet } from "react-router";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
+import LoadingScreen from "../component/LoadingScreen";
 
 const MainLayout = () => {
   return (
     <div className="">
       <Header></Header>
-      <div>
-        <Outlet></Outlet>
-      </div>
+      <Suspense fallback={<LoadingScreen></LoadingScreen>}>
+        <Outlet />
+      </Suspense>
       <Footer></Footer>
     </div>
   );

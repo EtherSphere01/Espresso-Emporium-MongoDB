@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../component/Home";
 import AddCoffee from "../component/AddCoffee";
 import UpdateCoffee from "../component/UpdateCoffee";
+import CoffeeDetails from "../component/CoffeeDetails";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/update-coffee/:id",
         element: <UpdateCoffee></UpdateCoffee>,
+      },
+      {
+        path: "/coffees/:id",
+        element: <CoffeeDetails></CoffeeDetails>,
       },
     ],
   },

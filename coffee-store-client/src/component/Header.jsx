@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div
       style={{
-        backgroundImage: `url('public/resources/images/more/15.jpg')`,
+        backgroundImage: `url('/public/resources/images/more/15.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
