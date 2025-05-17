@@ -6,7 +6,7 @@ const Hero = () => {
       <div
         className="hero min-h-screen rancho-regular relative"
         style={{
-          backgroundImage: "url(/resources/images/more/3.png)",
+          backgroundImage: "url(public/resources/images/more/3.png)",
         }}
       >
         {/* Remove or comment out this overlay if you don't want transparency */}
@@ -45,7 +45,7 @@ const Hero = () => {
       <div className="bg-[#ECEAE3] w-full py-10">
         <div className="container mx-auto flex flex-col md:flex-row px-2 md:px-0 items-center justify-between h-full gap-6 ">
           <div className="space-y-3">
-            <img src="/resources/images/icons/1.png" alt="" />
+            <img src="public/resources/images/icons/1.png" alt="" />
             <h1 className="text-3xl font-bold rancho-regular ">
               Awesome Aroma
             </h1>
@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
 
           <div className="space-y-3">
-            <img src="/resources/images/icons/2.png" alt="" />
+            <img src="public/resources/images/icons/2.png" alt="" />
             <h1 className="text-3xl font-bold rancho-regular ">High Quality</h1>
             <p className="text-sm raleway-regular">
               We served the coffee to you maintaining the best quality
@@ -63,7 +63,7 @@ const Hero = () => {
           </div>
 
           <div className="space-y-3">
-            <img src="/resources/images/icons/3.png" alt="" />
+            <img src="public/resources/images/icons/3.png" alt="" />
             <h1 className="text-3xl font-bold rancho-regular ">Pure Grades</h1>
             <p className="text-sm raleway-regular">
               The coffee is made of the green coffee beans which you will love
@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
 
           <div className="space-y-3">
-            <img src="/resources/images/icons/4.png" alt="" />
+            <img src="public/resources/images/icons/4.png" alt="" />
             <h1 className="text-3xl font-bold rancho-regular ">
               Proper Roasting
             </h1>

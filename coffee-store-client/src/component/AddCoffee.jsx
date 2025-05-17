@@ -38,7 +38,7 @@ const AddCoffee = () => {
   return (
     <div
       style={{
-        backgroundImage: "url('/resources/images/more/11.png')",
+        backgroundImage: "url('public/resources/images/more/11.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

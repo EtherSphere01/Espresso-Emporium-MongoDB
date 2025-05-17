@@ -27,7 +27,7 @@ const CoffeeList = () => {
       {/* Top-layer background image */}
       <div className="absolute top-10 left-0 w-full z-10 pointer-events-none">
         <img
-          src="/resources/images/more/1.png"
+          src="public/resources/images/more/1.png"
           alt="Decorative Overlay"
           className="w-full h-auto object-cover"
         />
@@ -45,7 +45,7 @@ const CoffeeList = () => {
             >
               Add Coffee
               <img
-                src="/resources/images/icons/1.png"
+                src="public/resources/images/icons/1.png"
                 className="w-5 h-5"
                 alt=""
               />
