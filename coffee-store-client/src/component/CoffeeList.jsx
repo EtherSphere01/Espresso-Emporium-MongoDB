@@ -24,7 +24,7 @@ const CoffeeList = () => {
   return (
     <div className="coffee-list container mx-auto p-5">
       {coffees.length === 0 && <p>No coffees found.</p>}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {coffees.map((coffee) => (
           <Coffee key={coffee._id} coffee={coffee} />
         ))}
