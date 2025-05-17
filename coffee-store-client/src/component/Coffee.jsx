@@ -11,7 +11,7 @@ const Coffee = ({ coffee }) => {
         <img
           src={coffee?.photo}
           alt={coffee?.name}
-          className="w-60 h-60 object-center rounded-lg"
+          className="w-50 h-60 object-center rounded-lg"
         />
       </div>
       <div>
