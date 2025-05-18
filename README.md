@@ -37,7 +37,7 @@
 ## 📷 Screenshots
 
 #### Landing Page
-![Landing Page Screenshot](public/resources/images/HomePage.png)
+![Landing Page Screenshot](coffee-store-client/public/resources/images/HomePage.png)
 
 #### Add Coffee Page
 ![Landing Page Screenshot](public/resources/images/AddCoffeePage.png)
