@@ -37,13 +37,16 @@
 ## 📷 Screenshots
 
 #### Landing Page
+
 ![Landing Page Screenshot](coffee-store-client/public/resources/images/HomePage.png)
 
 #### Add Coffee Page
-![Landing Page Screenshot](public/resources/images/AddCoffeePage.png)
+
+![Landing Page Screenshot](coffee-store-client/public/resources/images/AddCoffeePage.png)
 
 #### View Page
-![Landing Page Screenshot](public/resources/images/ViewPage.png)
+
+![Landing Page Screenshot](coffee-store-client/public/resources/images/ViewPage.png)
 
 ## 📦 Setup Instructions
 
@@ -62,7 +65,5 @@
    ```
 4. Ensure MongoDB is running locally or use a MongoDB Atlas connection string.
 5. Enjoy managing your coffee collection!
-
-
 
 ### Credit: Resources from Programming Hero
