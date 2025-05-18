@@ -10,7 +10,7 @@ const AddCoffee = () => {
     const form = event.target;
     const formData = new FormData(form);
 
-    fetch("http://localhost:3000/add-coffee", {
+    fetch("https://coffee-store-server-six-chi-85.vercel.app/add-coffee", {
       method: "POST",
       body: formData, // Do NOT set Content-Type manually with FormData
     })

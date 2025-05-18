@@ -9,7 +9,7 @@ const UpdateCoffee = () => {
   const [coffee, setCoffee] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/coffees/${id}`)
+    fetch(`https://coffee-store-server-six-chi-85.vercel.app/coffees/${id}`)
       .then((res) => res.json())
       .then((data) => setCoffee(data));
   }, [id]);
@@ -19,10 +19,13 @@ const UpdateCoffee = () => {
     const form = event.target;
     const formData = new FormData(form);
 
-    fetch(`http://localhost:3000/update-coffee/${id}`, {
-      method: "PUT",
-      body: formData,
-    })
+    fetch(
+      `https://coffee-store-server-six-chi-85.vercel.app/update-coffee/${id}`,
+      {
+        method: "PUT",
+        body: formData,
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount > 0 || data.acknowledged) {

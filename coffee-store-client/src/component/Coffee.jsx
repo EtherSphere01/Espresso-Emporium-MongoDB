@@ -17,9 +17,12 @@ const Coffee = ({ coffee, onDelete }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/delete-coffee/${id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://coffee-store-server-six-chi-85.vercel.app/delete-coffee/${id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
