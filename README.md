@@ -5,7 +5,6 @@
 ## 🌐 Deployed Links (Vercel)
 
 - Frontend (Production): https://coffee-store-client-one.vercel.app/
-- Backend (Production): https://espresso-emporium-server-rosy-nine.vercel.app/
 
 > Note: If you see a **401 Unauthorized** page, Vercel “Deployment Protection / Vercel Authentication” is enabled for your team. Disable it in Vercel Project Settings → Deployment Protection to make the URLs public.
 
